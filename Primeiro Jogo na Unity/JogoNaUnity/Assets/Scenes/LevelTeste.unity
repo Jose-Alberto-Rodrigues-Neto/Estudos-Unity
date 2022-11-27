@@ -251,6 +251,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 631827901}
+  velF: 300
+  velLados: 300
+  pulo: 300
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,7 +374,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784616193}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 73d9dd5a39b284f409d3719bf31c12c4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
