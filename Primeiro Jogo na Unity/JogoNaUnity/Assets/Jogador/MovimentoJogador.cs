@@ -19,6 +19,7 @@ public class MovimentoJogador : MonoBehaviour
         {
             velF = 0;
             velLados = 0;
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
     void Start() //Roda quando seu jogo inicia, tipo um create em Game Maker Studio 2
@@ -49,7 +50,12 @@ public class MovimentoJogador : MonoBehaviour
         {
             rb.AddForce(-(velLados * Time.deltaTime), 0, 0, ForceMode.VelocityChange);
         }
-
+        
+        //terminando o jogo caso caia da plataforma
+        if (rb.position.y < -1f)
+        {
+            FindObjectOfType<GameManager>().EndGame();
+        }
         
         
     }
