@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Entrada.unity
+    guid: ad9a081347414f74786b3c944ca99962
+  - enabled: 1
     path: Assets/Scenes/LevelTeste.unity
     guid: 315b466d6ae0625429dae8c8986e3a42
   - enabled: 1
     path: Assets/Scenes/LevelTeste 1.unity
     guid: 400303dcea8425a4682e18d52f7199cf
+  - enabled: 1
+    path: Assets/Scenes/Saida.unity
+    guid: aa8a7f92d3f1f7b4890a902cc9d456a2
   m_configObjects: {}

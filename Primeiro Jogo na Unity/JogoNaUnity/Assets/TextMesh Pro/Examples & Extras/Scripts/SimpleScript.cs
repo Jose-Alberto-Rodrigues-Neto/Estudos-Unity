@@ -54,5 +54,9 @@ namespace TMPro.Examples
             m_frame += 1 * Time.deltaTime;
         }
 
+        public void OnClick () 
+        { 
+        
+        }
     }
 }
