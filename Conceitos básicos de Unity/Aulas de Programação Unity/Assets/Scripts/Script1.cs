@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Script1 : MonoBehaviour
 {
-    
+    float eventoX = 0f, limite = 25f;
 
     void Start()
     {
@@ -14,6 +14,15 @@ public class Script1 : MonoBehaviour
 
     void Update()
     {
-        
+        eventoX += Time.deltaTime;
+        Debug.Log(eventoX);
+        int resultado;
+        print(resultado = eventoX < limite ? 0 : 1); //operador ternário
+        if (eventoX >= limite)
+        {
+            Debug.LogError("fim");
+
+        }
+
     }
 }

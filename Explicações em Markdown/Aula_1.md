@@ -4,8 +4,6 @@
 
 Variáveis são divididas em tipos, sendo eles:
 
-![Tipos de variaveis](https://i1.wp.com/i7.photobucket.com/albums/y300/clarkquente/tutorialcsharo21.jpg)
-
 ~~~C#
 int x = 10; // o int se refere a números inteiros
 
@@ -16,9 +14,9 @@ double z = 20.45f; //o double é uma versão mais longa do float, ou seja, armaz
 bool Estudando = true; //valor booleano se refere ao estado de verdadeiro ou falso, nesse caso é verdadeiro
 
 string IssoÉUmTexto = "Isso é um texto"; //uma string se refere a um texto
-~~~~
+~~~
 
-### Variáveis globais e locais
+## Variáveis globais e locais
 
 Uma **variável global** é criada dentro da *Public Class "nome"*. As váriaveis globais podem ser acessadas e alterada de dentro de todos os outros metódos.
 
@@ -46,4 +44,43 @@ public class Somar: MonoBehaviour{
     }
 }
 
-~~~~
+~~~
+
+## Operadores
+
+Os principais operadores aritméticos são:
+
+![Operadores art.](https://mantmor.files.wordpress.com/2010/07/01.png)
+
+Já os principais operadores lógicos são:
+
+![Operadores log.](https://mantmor.files.wordpress.com/2010/07/02.png)
+
+Mas quando vamos usa-los? Irei dar um exemplo simples. Caso queira implementar um evento que vá acontecer em determinado momento do seu tempo, nesse caso 20 segundos depois do jogo começar, nós iremos fazer:
+
+~~~C#
+using UnityEngine;
+public class Script1 : MonoBehaviour
+{
+    float contador = 0f; //primeiro criamos um contador que irá começar com zero
+
+    float evento = 25f; //após, nós criaremos o valor ao qual o evento acontecerá
+
+    void Update()
+    {
+        contador += Time.deltaTime; //aqui nós estaremos falando que o tempo em que o jogo está sendo rodado será adicionado ao valor do contador
+
+        Debug.Log(contador); //mostrará o valor do contador
+
+        if (contador >= evento) //nessa condicional, ao qual iremos explorar mais para frente, dizemos que se o contador for maior ou igual ao evento ele irá iniciar o evento, vale ressaltar que como se trata de valores quebrados (float) ele pode não rodar se você colocar como condição o contador ser igual ao evento
+        {
+            Debug.LogError("evento iniciado"); //Aqui nós iremos fazer com que surja um erro, meramente por capricho, para mostrar que o evento foi iniciado com sucesso
+        }
+
+    }
+}
+~~~
+
+### Operador Ternário
+
+Operadores ternários são
